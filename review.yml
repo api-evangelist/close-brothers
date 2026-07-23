@@ -1,0 +1,110 @@
+aid: close-brothers
+name: Close Brothers
+review:
+  question: >-
+    Does Close Brothers publish a public developer portal, a UK Open Banking Open
+    Data endpoint, or OBIE Read/Write (PSD2) APIs?
+  answer: false
+  date: '2026-07-23'
+  reviewer: API Evangelist
+findings:
+  summary: |
+    Close Brothers Group plc (LSE: CBG) is an FTSE 250 UK merchant banking group
+    (specialist lending, savings/deposits, wealth management via Close Brothers
+    Asset Management, and securities via Winterflood). It is NOT one of the CMA9
+    banks mandated under the UK Open Banking / CMA Order, and it does not offer
+    online payment (current) accounts — only savings and deposit products — so it
+    carries no PSD2 / OBIE Read/Write or Open Data publishing obligation.
+
+    No public developer portal, API catalogue, Open Banking Open Data endpoint,
+    OpenAPI/Swagger definition, or GitHub organisation could be confirmed for the
+    group. Candidate developer hosts (developer.closebrothers.com,
+    api.closebrothers.com, openbanking.closebrothers.com) do not resolve;
+    standard OBIE Open Data paths and the .well-known/open-banking discovery path
+    return 404. The corporate website and legal/support pages are live. This is
+    an identity-only ("built-stub") profile: real company identity captured, no
+    verifiable API surface.
+  cma9: false
+  openBankingAspsp:
+    status: not-confirmed
+    note: >-
+      Savings/deposit-only deposit taker with no online payment accounts; no
+      evidence of ASPSP participation in the Open Banking Directory and no
+      Read/Write or Open Data obligation.
+  developerPortal:
+    confirmed: false
+    probed:
+      - url: https://developer.closebrothers.com/
+        status: 000
+        note: Host does not resolve.
+      - url: https://api.closebrothers.com/
+        status: 000
+        note: Host does not resolve.
+      - url: https://openbanking.closebrothers.com/
+        status: 000
+        note: Host does not resolve.
+      - url: https://developer.closebrothersam.com/
+        status: 000
+        note: Host does not resolve.
+  openDataEndpoint:
+    confirmed: false
+    baseURL: ""
+    probed:
+      - url: https://www.closebrothers.com/.well-known/open-banking/
+        status: 404
+      - url: https://www.closebrothers.com/open-banking/v3.1/aisp/branches
+        status: 404
+  readWriteSpecs:
+    confirmed: false
+    authModel: >-
+      N/A — Close Brothers publishes no OBIE Read/Write APIs. Where a UK ASPSP
+      does, the OBIE Read/Write standard is FAPI-secured (OAuth2 / OIDC, mutual
+      TLS client authentication, PSD2 strong customer authentication, and dynamic
+      client registration with OBIE/eIDAS certificates).
+    provenance: >-
+      No bank-proprietary spec exists to harvest. The only relevant artifacts are
+      the shared OBIE standard specifications
+      (github.com/OpenBankingUK/read-write-api-specs and
+      github.com/OpenBankingUK/opendata-api-specs), which are the industry
+      standard and not a Close Brothers contract — not harvested into this repo.
+  transports:
+    - protocol: HTTPS
+      scheme: https
+      baseURL: https://www.closebrothers.com/
+      documented: true
+      note: Corporate marketing/website only; no machine-readable API.
+    - protocol: OBIE-OpenData
+      scheme: https
+      documented: false
+      note: No Open Data (unauthenticated reference data) endpoint published.
+    - protocol: OBIE-ReadWrite-FAPI
+      scheme: https
+      documented: false
+      note: No FAPI-secured AIS/PIS/CBPII surface published.
+  openapiHarvested: false
+sources:
+  - url: https://www.closebrothers.com/
+    type: Website
+    note: Live corporate homepage (HTTP 200).
+  - url: https://www.closebrothers.com/what-we-do
+    type: About
+    note: Divisions - specialist lending, savings, asset management, securities. No current accounts.
+  - url: https://en.wikipedia.org/wiki/Close_Brothers_Group
+    type: Reference
+    note: Founded 1878; LSE ticker CBG; FTSE 250; London HQ; merchant banking group.
+  - url: https://www.openbankingtracker.com/bank-apis
+    type: Reference
+    note: Close Brothers not listed among tracked Open Banking API providers.
+  - url: https://uk.linkedin.com/company/close-brothers
+    type: LinkedIn
+    note: Group LinkedIn presence.
+actions:
+  apisYmlUpdated: true
+  openapiHarvested: false
+  reason: |
+    Identity captured with verified website, LinkedIn, support, terms, and
+    privacy links. apis[] left empty because no real API surface was
+    confirmed. OBIE Open Data and Read/Write standards are referenced as
+    industry context in the README, explicitly labelled as the shared OBIE
+    standard and NOT published by Close Brothers, to avoid fabricating a bank
+    API contract or host.

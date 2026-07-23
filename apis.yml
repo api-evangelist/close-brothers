@@ -1,0 +1,47 @@
+aid: close-brothers
+url: https://raw.githubusercontent.com/api-evangelist/close-brothers/refs/heads/main/apis.yml
+name: Close Brothers
+kind: company
+description: >-
+  Close Brothers Group plc (LSE: CBG) is a UK merchant banking group founded in
+  1878 and a constituent of the FTSE 250 Index, headquartered at 10 Crown Place,
+  London EC2A 4FT. The group provides specialist lending across motor, premium,
+  asset, invoice, and property finance; takes personal and business deposits
+  through Close Brothers Savings; manages wealth through Close Brothers Asset
+  Management; and trades securities through Winterflood. Its banking entity,
+  Close Brothers Limited, is authorised by the Prudential Regulation Authority
+  and regulated by the Financial Conduct Authority and the PRA. Close Brothers is
+  not one of the CMA9 mandated banks; it offers savings and deposit products
+  rather than online payment (current) accounts, and therefore carries no UK
+  Open Banking (OBIE / PSD2) Read/Write or Open Data publishing obligation. As of
+  this profile no public developer portal, Open Banking Open Data endpoint, or
+  documented API surface could be confirmed for the group.
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+tags:
+- Financial Services
+- Banking
+- Merchant Banking
+- Specialist Lending
+- Savings
+- Wealth Management
+- Securities
+- United Kingdom
+- FTSE 250
+created: '2026-07-23'
+modified: '2026-07-23'
+specificationVersion: '0.19'
+apis: []
+common:
+- type: Website
+  url: https://www.closebrothers.com/
+- type: LinkedIn
+  url: https://uk.linkedin.com/company/close-brothers
+- type: Support
+  url: https://www.closebrothers.com/contact-us
+- type: TermsOfService
+  url: https://www.closebrothers.com/legal
+- type: PrivacyPolicy
+  url: https://www.closebrothers.com/cookies-privacy
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
