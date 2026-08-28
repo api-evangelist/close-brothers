@@ -16,6 +16,17 @@ description: >-
   Open Banking (OBIE / PSD2) Read/Write or Open Data publishing obligation. As of
   this profile no public developer portal, Open Banking Open Data endpoint, or
   documented API surface could be confirmed for the group.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
 - Financial-Services
