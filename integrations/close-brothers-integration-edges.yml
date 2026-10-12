@@ -1,0 +1,16 @@
+generated: '2026-10-12'
+method: none
+source:
+- https://zapier.com/apps/close-brothers/integrations
+- https://n8n.io/integrations/close-brothers/
+- https://composio.dev/toolkits/close-brothers
+- https://monid.ai/tools/close-brothers
+checked:
+- https://composio.dev/toolkits/close-brothers
+- https://monid.ai/tools/close-brothers
+- https://n8n.io/integrations/close-brothers/
+- https://zapier.com/apps/close-brothers/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
