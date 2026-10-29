@@ -1,4 +1,4 @@
-# Close Brothers (close-brothers)
+# Close Brothers
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,47 +64,82 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Close Brothers Group plc (LSE: CBG) is a UK merchant banking group founded in 1878 and a constituent of the FTSE 250 Index, headquartered at 10 Crown Place, London EC2A 4FT. The group provides specialist lending (motor, premium, asset, invoice, and property finance), takes personal and business deposits through Close Brothers Savings, manages wealth through Close Brothers Asset Management, and trades securities through Winterflood. Its banking entity, Close Brothers Limited, is authorised by the PRA and regulated by the FCA and PRA.
+Close Brothers Group plc (LSE: CBG) is a UK merchant banking group founded in 1878 and a constituent of the FTSE 250 Index, headquartered at 10 Crown Place, London EC2A 4FT. The group provides specialist lending across motor, premium, asset, invoice, and property finance; takes personal and business deposits through Close Brothers Savings; manages wealth through Close Brothers Asset Management; and trades securities through Winterflood. Its banking entity, Close Brothers Limited, is authorised by the Prudential Regulation Authority and regulated by the Financial Conduct Authority and the PRA. Close Brothers is not one of the CMA9 mandated banks; it offers savings and deposit products rather than online payment (current) accounts, and therefore carries no UK Open Banking (OBIE / PSD2) Read/Write or Open Data publishing obligation. As of this profile no public developer portal, Open Banking Open Data endpoint, or documented API surface could be confirmed for the group.
 
-**APIs.json:** [https://raw.githubusercontent.com/api-evangelist/close-brothers/refs/heads/main/apis.yml](https://raw.githubusercontent.com/api-evangelist/close-brothers/refs/heads/main/apis.yml)
+**Areas:** Financial Services · Banking · Merchant Banking · Specialist Lending · Savings · Wealth Management · Securities · United Kingdom · FTSE 250
 
-## Tags
+## Close Brothers on APIs.io
 
-- Financial Services
-- Banking
-- Merchant Banking
-- Specialist Lending
-- Savings
-- Wealth Management
-- Securities
-- United Kingdom
-- FTSE 250
+Everything profiled for Close Brothers is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/close-brothers/](https://apis.io/providers/close-brothers/)** — or go straight to one of the APIs or properties below.
 
-## Timestamps
+### Published properties
 
-- **Created:** 2026-07-23
-- **Modified:** 2026-07-23
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## APIs
+#### Security (1)
 
-No public API surface could be confirmed for Close Brothers at the time of this profile.
+Authentication, trust centre, and vulnerability disclosure.
 
-Close Brothers is **not** one of the UK CMA9 mandated banks. It offers savings and deposit products rather than online payment (current) accounts, so it has no UK Open Banking (OBIE / PSD2) Read/Write or Open Data publishing obligation. Probes for a developer portal (`developer.closebrothers.com`, `api.closebrothers.com`), an Open Banking Open Data endpoint (`/open-banking/...`, `/.well-known/open-banking`), and a GitHub organisation all failed to resolve or returned 404. See [review.yml](review.yml) for the full posture assessment.
+- [Close Brothers Domain Security](https://apis.io/security/close-brothers/close-brothers-domain-security/)
 
-The UK Open Banking standard surfaces referenced for context (and their shared specifications) are:
+## Where to find this API
 
-- **OBIE Open Data APIs** — public, unauthenticated reference data (ATMs, Branches, Personal/Business Current Accounts, etc.). Shared spec: [github.com/OpenBankingUK/opendata-api-specs](https://github.com/OpenBankingUK/opendata-api-specs). Not published by Close Brothers.
-- **OBIE Read/Write APIs** — FAPI-secured Account & Transaction Information (AIS), Payment Initiation (PIS), and Confirmation of Funds (CBPII). Shared spec: [github.com/OpenBankingUK/read-write-api-specs](https://github.com/OpenBankingUK/read-write-api-specs). Not published by Close Brothers.
-
-## Common Properties
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
 - [Website](https://www.closebrothers.com/)
-- [LinkedIn](https://uk.linkedin.com/company/close-brothers)
 - [Support](https://www.closebrothers.com/contact-us)
-- [Terms of Service](https://www.closebrothers.com/legal)
-- [Privacy Policy](https://www.closebrothers.com/cookies-privacy)
+- [Terms of service](https://www.closebrothers.com/legal)
+- [Privacy policy](https://www.closebrothers.com/cookies-privacy)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** kin@apievangelist.com
+**Kin Score 8.6** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 48.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 4.8 |
+| Access clarity | 21.1 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 11.0** — Banking & Open Finance
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/close-brothers/](https://apis.io/providers/close-brothers/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Close Brothers: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/close-brothers/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
